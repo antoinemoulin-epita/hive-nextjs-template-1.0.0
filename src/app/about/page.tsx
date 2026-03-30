@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Le Studio',
   description:
-    'Découvrez qui se cache derrière Studio Cran — deux étudiants d\'EPITA qui construisent des outils sur mesure pour les PME.',
+    "Découvrez qui se cache derrière Studio Cran — deux étudiants d'EPITA qui construisent des outils sur mesure pour les PME.",
 };
 
 const founders = [
@@ -18,15 +18,19 @@ const founders = [
     name: 'Antoine Moulin',
     role: 'Front-end, Design & Communication',
     bio: 'Passionné par les interfaces qui ont du sens. Antoine conçoit des outils que vos équipes adoptent dès le premier jour — clairs, rapides, agréables à utiliser. Il gère aussi la relation client de A à Z.',
-    image: { src: '/people/antoinemoulin.png', alt: 'Antoine Moulin', className: '' },
+    image: {
+      src: '/people/antoinemoulin.png',
+      alt: 'Antoine Moulin',
+      className: '',
+    },
     linkedin: 'https://linkedin.com/in/antoinemoulin',
   },
   {
-    name: 'David Mvoula',
+    name: 'Personne numéro 2',
     role: 'Back-end, Architecture & IA',
-    bio: 'David construit ce qu\'on ne voit pas mais qui fait tout fonctionner : bases de données, API, intégrations, automatisations IA. Il s\'assure que votre outil est solide, rapide et évolutif.',
-    image: { src: '/people/antoinemoulin.png', alt: 'David Mvoula', className: '' },
-    linkedin: 'https://linkedin.com/in/davidmvoula',
+    bio: 'Personne numéro 2 construit ce qu\'on ne voit pas mais qui fait tout fonctionner : bases de données, API, intégrations, automatisations IA. Il s\'assure que votre outil est solide, rapide et évolutif.',
+    image: { src: '/people/antoinemoulin.png', alt: 'Personne numéro 2', className: '' },
+    linkedin: '',
   },
 ];
 
@@ -34,7 +38,7 @@ const values = [
   {
     title: 'Clarté',
     description:
-      'On vous explique tout. Pas de jargon, pas de zone grise. Vous savez exactement ce qu\'on fait, pourquoi, et combien ça coûte.',
+      "On vous explique tout. Pas de jargon, pas de zone grise. Vous savez exactement ce qu'on fait, pourquoi, et combien ça coûte.",
   },
   {
     title: 'Efficacité',
@@ -44,7 +48,7 @@ const values = [
   {
     title: 'Responsabilité',
     description:
-      'On ne disparaît pas après la livraison. Votre outil évolue, et on reste là pour l\'accompagner.',
+      "On ne disparaît pas après la livraison. Votre outil évolue, et on reste là pour l'accompagner.",
   },
 ];
 
@@ -187,24 +191,12 @@ export default function AboutPage() {
         <h2 className="font-display text-4xl font-semibold tracking-tight">
           Envie d&apos;en savoir plus ?
         </h2>
-        <Button
-          variant="outline"
-          size="lg"
-          className="gap-4 ps-1 pe-6"
-          asChild
-        >
+        <Button variant="outline" size="lg" className="gap-4 ps-1 pe-6" asChild>
           <Link href="/contact">
             <div className="flex items-center gap-1">
               <Image
                 src="/people/antoinemoulin.png"
                 alt="Antoine Moulin"
-                width={38}
-                height={38}
-                className="rounded-full object-cover"
-              />
-              <Image
-                src="/people/antoinemoulin.png"
-                alt="David Mvoula"
                 width={38}
                 height={38}
                 className="rounded-full object-cover"

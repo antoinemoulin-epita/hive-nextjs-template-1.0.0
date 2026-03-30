@@ -11,7 +11,7 @@ const founders = [
     image: '/people/antoinemoulin.png',
   },
   {
-    name: 'David Mvoula',
+    name: 'Personne numéro 2',
     role: 'Back / Archi / IA',
     image: '/people/antoinemoulin.png',
   },
@@ -21,17 +21,20 @@ const values = [
   {
     icon: Zap,
     title: 'Réactivité',
-    description: 'Petite équipe, zéro bureaucratie. On avance vite et on répond dans la journée.',
+    description:
+      'Petite équipe, zéro bureaucratie. On avance vite et on répond dans la journée.',
   },
   {
     icon: Code,
     title: 'Qualité',
-    description: 'Du code propre, des interfaces soignées. On livre un outil dont vous êtes fier.',
+    description:
+      'Du code propre, des interfaces soignées. On livre un outil dont vous êtes fier.',
   },
   {
     icon: Cpu,
     title: 'Sur mesure',
-    description: 'Chaque projet est unique. On construit pour votre métier, pas un template générique.',
+    description:
+      'Chaque projet est unique. On construit pour votre métier, pas un template générique.',
   },
 ];
 

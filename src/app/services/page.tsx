@@ -33,15 +33,25 @@ const services = [
     description:
       "On automatise ce que vous faites à la main. Relances clients, traitement de données, rédaction — moins d'erreurs, plus de temps pour votre vrai métier.",
     price: 'Inclus ou en complément',
-    tags: ['IA générative', 'Relances auto', 'Traitement de données', 'Chatbot'],
+    tags: [
+      'IA générative',
+      'Relances auto',
+      'Traitement de données',
+      'Chatbot',
+    ],
     image: '/images/projects/project-2/1.webp',
   },
   {
     title: 'Évolution & support',
     description:
-      "Votre outil grandit avec votre entreprise. Mises à jour, nouvelles fonctionnalités, automatisations supplémentaires. On reste à vos côtés après la livraison.",
+      'Votre outil grandit avec votre entreprise. Mises à jour, nouvelles fonctionnalités, automatisations supplémentaires. On reste à vos côtés après la livraison.',
     price: 'Abonnement mensuel',
-    tags: ['Maintenance', 'Nouvelles features', 'Support réactif', 'Monitoring'],
+    tags: [
+      'Maintenance',
+      'Nouvelles features',
+      'Support réactif',
+      'Monitoring',
+    ],
     image: '/images/projects/project-3/1.webp',
   },
 ];
@@ -57,8 +67,8 @@ export default function ServicesPage() {
           </h1>
           <p className="text-muted-foreground text-lg">
             Trois offres claires, adaptées aux PME. Pas de jargon, pas de
-            surprise sur la facture. On construit ce dont vous avez besoin,
-            rien de plus.
+            surprise sur la facture. On construit ce dont vous avez besoin, rien
+            de plus.
           </p>
         </div>
 
@@ -117,13 +127,6 @@ export default function ServicesPage() {
               <Image
                 src="/people/antoinemoulin.png"
                 alt="Antoine Moulin"
-                width={38}
-                height={38}
-                className="rounded-full object-cover"
-              />
-              <Image
-                src="/people/antoinemoulin.png"
-                alt="David Mvoula"
                 width={38}
                 height={38}
                 className="rounded-full object-cover"
