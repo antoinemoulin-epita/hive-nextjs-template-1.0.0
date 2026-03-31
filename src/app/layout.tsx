@@ -23,6 +23,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: '5JISaMz1w3eJxvEQ-2T0M9Fks8qNaKd4r09ZPhDNIDk',
+  },
   metadataBase: new URL('https://studiocran.fr'),
   title: {
     default: 'Studio Cran — Logiciel sur mesure et automatisation IA pour PME',
