@@ -48,14 +48,14 @@ export function Hero() {
       <section
         className={cn(
           'relative m-5 mb-0! flex min-h-[min(100dvh,702px)] flex-col items-center justify-center overflow-hidden p-5 md:m-6 md:min-h-[min(100dvh,1032px)] md:p-6',
-          'bg-[#060F16] text-white',
+          'bg-[#141952] text-white',
         )}
       >
         {/* Animated mesh gradient */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           {/* Blob 1 — large, slow drift top-right */}
           <motion.div
-            className="absolute h-[600px] w-[600px] rounded-full bg-[#2C769D] opacity-25 blur-[130px]"
+            className="absolute h-[600px] w-[600px] rounded-full bg-[#202DDB] opacity-25 blur-[130px]"
             animate={{
               x: [0, 80, -40, 0],
               y: [0, -60, 40, 0],
@@ -71,7 +71,7 @@ export function Hero() {
 
           {/* Blob 2 — medium, opposite drift bottom-left */}
           <motion.div
-            className="absolute h-[500px] w-[500px] rounded-full bg-[#255F7F] opacity-30 blur-[120px]"
+            className="absolute h-[500px] w-[500px] rounded-full bg-[#222E8D] opacity-30 blur-[120px]"
             animate={{
               x: [0, -60, 50, 0],
               y: [0, 50, -30, 0],
@@ -87,7 +87,7 @@ export function Hero() {
 
           {/* Blob 3 — accent, faster pulse center */}
           <motion.div
-            className="absolute h-[400px] w-[500px] rounded-full bg-[#3D92BA] opacity-15 blur-[100px]"
+            className="absolute h-[400px] w-[500px] rounded-full bg-[#2F41FC] opacity-15 blur-[100px]"
             animate={{
               x: [0, 40, -30, 0],
               y: [0, -40, 20, 0],
@@ -104,7 +104,7 @@ export function Hero() {
 
           {/* Blob 4 — cyan highlight, small, fast */}
           <motion.div
-            className="absolute h-[300px] w-[350px] rounded-full bg-[#6CB2D2] opacity-10 blur-[90px]"
+            className="absolute h-[300px] w-[350px] rounded-full bg-[#4F6CFF] opacity-10 blur-[90px]"
             animate={{
               x: [0, -50, 60, 0],
               y: [0, 40, -50, 0],
@@ -120,7 +120,7 @@ export function Hero() {
 
           {/* Blob 5 — deep blue, very slow, bottom-right */}
           <motion.div
-            className="absolute h-[450px] w-[450px] rounded-full bg-[#162C3B] opacity-40 blur-[100px]"
+            className="absolute h-[450px] w-[450px] rounded-full bg-[#202CB3] opacity-40 blur-[100px]"
             animate={{
               x: [0, 30, -20, 0],
               y: [0, -20, 30, 0],
@@ -151,7 +151,7 @@ export function Hero() {
         </div>
 
         {/* Vignette edges */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,#060F16_100%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,#141952_100%)]" />
 
         {/* Main Content */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center py-10 text-center">
@@ -163,11 +163,11 @@ export function Hero() {
               transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
             >
               Votre entreprise mérite un outil{' '}
-              <span className="text-[#ADE8F4]">taillé pour elle</span>
+              <span className="text-[#BFD5FF]">taillé pour elle</span>
             </motion.h1>
 
             <motion.p
-              className="max-w-2xl text-lg text-[#ADE8F4]/50 md:text-xl"
+              className="max-w-2xl text-lg text-[#BFD5FF]/50 md:text-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.4, 0.25, 1] }}
@@ -186,7 +186,7 @@ export function Hero() {
               <Button
                 size="lg"
                 asChild
-                className="bg-[#3D92BA] text-white hover:bg-[#2C769D]"
+                className="bg-[#2F41FC] text-white hover:bg-[#202DDB]"
               >
                 <Link href="/contact">
                   Discutons de votre projet
@@ -197,7 +197,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-[#3D92BA]/30 text-[#ADE8F4] hover:bg-[#ADE8F4]/10"
+                className="border-[#4F6CFF]/30 text-[#BFD5FF] hover:bg-[#BFD5FF]/10"
               >
                 <a href="#realisations">
                   Voir nos réalisations
