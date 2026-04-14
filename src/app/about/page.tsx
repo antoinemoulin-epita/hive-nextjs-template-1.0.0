@@ -26,11 +26,15 @@ const founders = [
     linkedin: 'https://linkedin.com/in/antoinemoulin',
   },
   {
-    name: 'Personne numéro 2',
+    name: 'David Mvoula',
     role: 'Back-end, Architecture & IA',
-    bio: 'Personne numéro 2 construit ce qu\'on ne voit pas mais qui fait tout fonctionner : bases de données, API, intégrations, automatisations IA. Il s\'assure que votre outil est solide, rapide et évolutif.',
-    image: { src: '/people/antoinemoulin.png', alt: 'Personne numéro 2', className: '' },
-    linkedin: '',
+    bio: "David construit ce qu'on ne voit pas mais qui fait tout fonctionner : bases de données, API, intégrations, automatisations IA. Il s'assure que votre outil est solide, rapide et évolutif.",
+    image: {
+      src: '/people/antoinemoulin.png',
+      alt: 'David Mvoula',
+      className: '',
+    },
+    linkedin: 'https://linkedin.com/in/davidmvoula',
   },
 ];
 

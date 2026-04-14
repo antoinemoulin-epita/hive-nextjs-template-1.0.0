@@ -11,7 +11,7 @@ const founders = [
     image: '/people/antoinemoulin.png',
   },
   {
-    name: 'Personne numéro 2',
+    name: 'David Mvoula',
     role: 'Back / Archi / IA',
     image: '/people/antoinemoulin.png',
   },
@@ -94,10 +94,10 @@ export const AboutIntro = () => {
           {/* Stats bar */}
           <div className="relative z-10 mt-16 grid grid-cols-2 gap-8 border-t border-white/10 pt-10 md:grid-cols-4">
             {[
-              { value: '2', label: 'Profils complémentaires' },
+              { value: '2', label: 'Fondateurs à temps plein' },
               { value: '0', label: 'Intermédiaire' },
-              { value: '6 sem.', label: 'Délai moyen' },
-              { value: '12+', label: 'Technos maîtrisées' },
+              { value: '100%', label: 'Code sur mesure' },
+              { value: '< 48h', label: 'Délai de réponse' },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="font-display text-3xl font-semibold text-[#BFD5FF]">
