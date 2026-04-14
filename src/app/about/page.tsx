@@ -60,7 +60,7 @@ export default function AboutPage() {
         <div className="container text-center">
           <h1 className="font-display mx-auto max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
             On pense que les PME méritent des outils{' '}
-            <span className="text-[#3D92BA]">aussi bons</span> que ceux des
+            <span className="text-[#4F6CFF]">aussi bons</span> que ceux des
             startups tech.
           </h1>
         </div>
@@ -159,16 +159,16 @@ export default function AboutPage() {
       {/* Notre mission */}
       <section className="section-padding">
         <div className="container">
-          <div className="relative overflow-hidden rounded-2xl bg-[#0B1A24] px-8 py-16 text-white md:px-16 md:py-20">
+          <div className="relative overflow-hidden rounded-2xl bg-[#141952] px-8 py-16 text-white md:px-16 md:py-20">
             <div className="pointer-events-none absolute inset-0">
-              <div className="absolute -top-[30%] -right-[10%] h-[60%] w-[50%] rounded-full bg-[#255F7F] opacity-20 blur-[120px]" />
-              <div className="absolute -bottom-[20%] -left-[10%] h-[50%] w-[40%] rounded-full bg-[#2C769D] opacity-15 blur-[100px]" />
+              <div className="absolute -top-[30%] -right-[10%] h-[60%] w-[50%] rounded-full bg-[#202DDB] opacity-20 blur-[120px]" />
+              <div className="absolute -bottom-[20%] -left-[10%] h-[50%] w-[40%] rounded-full bg-[#2F41FC] opacity-15 blur-[100px]" />
             </div>
             <div className="relative z-10 mx-auto max-w-2xl space-y-8 text-center">
               <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
                 Notre mission
               </h2>
-              <p className="text-lg leading-relaxed text-[#98C9E1]/80">
+              <p className="text-lg leading-relaxed text-[#99B9FF]/80">
                 Donner aux PME françaises les outils que seules les startups
                 tech pouvaient s&apos;offrir. Un logiciel qui épouse votre
                 métier, qui automatise ce qui peut l&apos;être, et qui évolue
@@ -177,7 +177,7 @@ export default function AboutPage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-[#3D92BA] text-white hover:bg-[#2C769D]"
+                className="bg-[#2F41FC] text-white hover:bg-[#202DDB]"
               >
                 <Link href="/contact">Discutons de votre projet</Link>
               </Button>

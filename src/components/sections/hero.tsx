@@ -14,10 +14,10 @@ import {
 import { cn } from '@/lib/utils';
 
 const heroImages = [
-  { src: '/dashboard/d73fd5be05f72294061d22b52534435f.jpg', alt: 'Dashboard de gestion' },
-  { src: '/dashboard/31b2185d8e607ec01e33e78481c84ce8.jpg', alt: 'Interface analytique' },
-  { src: '/dashboard/f29ac63d46ca910d9f95c14a0f3f3f8e.jpg', alt: 'Tableau de bord métier' },
-  { src: '/dashboard/04.jpg', alt: 'Outil de suivi' },
+  { src: '/hollyfork/dashboard.png', alt: 'Dashboard de gestion HollyFork' },
+  { src: '/hollyfork/planning.png', alt: 'Planning de réservations' },
+  { src: '/hollyfork/reservation.png', alt: 'Interface de réservation' },
+  { src: '/hollyfork/carte.png', alt: 'Gestion de la carte' },
 ];
 
 function HeroCard({
@@ -53,9 +53,9 @@ export function Hero() {
       >
         {/* Animated mesh gradient */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          {/* Blob 1 — large, slow drift top-right */}
+          {/* Blob 1 — large, bright, slow drift top-right */}
           <motion.div
-            className="absolute h-[600px] w-[600px] rounded-full bg-[#202DDB] opacity-25 blur-[130px]"
+            className="absolute h-[700px] w-[700px] rounded-full bg-[#4F6CFF] opacity-40 blur-[140px]"
             animate={{
               x: [0, 80, -40, 0],
               y: [0, -60, 40, 0],
@@ -66,12 +66,12 @@ export function Hero() {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            style={{ top: '-10%', right: '-5%' }}
+            style={{ top: '-15%', right: '-10%' }}
           />
 
-          {/* Blob 2 — medium, opposite drift bottom-left */}
+          {/* Blob 2 — warm accent, opposite drift bottom-left */}
           <motion.div
-            className="absolute h-[500px] w-[500px] rounded-full bg-[#222E8D] opacity-30 blur-[120px]"
+            className="absolute h-[600px] w-[600px] rounded-full bg-[#7092FF] opacity-35 blur-[130px]"
             animate={{
               x: [0, -60, 50, 0],
               y: [0, 50, -30, 0],
@@ -82,29 +82,29 @@ export function Hero() {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            style={{ bottom: '-5%', left: '-10%' }}
+            style={{ bottom: '-10%', left: '-15%' }}
           />
 
-          {/* Blob 3 — accent, faster pulse center */}
+          {/* Blob 3 — vivid accent, faster pulse center */}
           <motion.div
-            className="absolute h-[400px] w-[500px] rounded-full bg-[#2F41FC] opacity-15 blur-[100px]"
+            className="absolute h-[500px] w-[600px] rounded-full bg-[#2F41FC] opacity-30 blur-[120px]"
             animate={{
               x: [0, 40, -30, 0],
               y: [0, -40, 20, 0],
               scale: [1, 1.3, 0.8, 1],
-              opacity: [0.15, 0.22, 0.12, 0.15],
+              opacity: [0.3, 0.4, 0.2, 0.3],
             }}
             transition={{
               duration: 15,
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            style={{ top: '35%', left: '40%', transform: 'translate(-50%, -50%)' }}
+            style={{ top: '30%', left: '35%' }}
           />
 
-          {/* Blob 4 — cyan highlight, small, fast */}
+          {/* Blob 4 — light highlight, small, fast */}
           <motion.div
-            className="absolute h-[300px] w-[350px] rounded-full bg-[#4F6CFF] opacity-10 blur-[90px]"
+            className="absolute h-[350px] w-[400px] rounded-full bg-[#99B9FF] opacity-20 blur-[100px]"
             animate={{
               x: [0, -50, 60, 0],
               y: [0, 40, -50, 0],
@@ -115,12 +115,12 @@ export function Hero() {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            style={{ top: '15%', left: '25%' }}
+            style={{ top: '10%', left: '20%' }}
           />
 
           {/* Blob 5 — deep blue, very slow, bottom-right */}
           <motion.div
-            className="absolute h-[450px] w-[450px] rounded-full bg-[#202CB3] opacity-40 blur-[100px]"
+            className="absolute h-[500px] w-[500px] rounded-full bg-[#202CB3] opacity-50 blur-[110px]"
             animate={{
               x: [0, 30, -20, 0],
               y: [0, -20, 30, 0],
@@ -131,14 +131,23 @@ export function Hero() {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            style={{ bottom: '10%', right: '15%' }}
+            style={{ bottom: '5%', right: '10%' }}
           />
         </div>
 
+        {/* Dot grid pattern overlay */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #BFD5FF 1px, transparent 1px)',
+            backgroundSize: '24px 24px',
+          }}
+        />
+
         {/* Noise texture for depth */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.03]">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <filter id="noise">
+            <filter id="hero-noise">
               <feTurbulence
                 type="fractalNoise"
                 baseFrequency="0.65"
@@ -146,12 +155,15 @@ export function Hero() {
                 stitchTiles="stitch"
               />
             </filter>
-            <rect width="100%" height="100%" filter="url(#noise)" />
+            <rect width="100%" height="100%" filter="url(#hero-noise)" />
           </svg>
         </div>
 
+        {/* Glow behind title */}
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#4F6CFF]/20 blur-[150px]" />
+
         {/* Vignette edges */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,#141952_100%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#141952_100%)]" />
 
         {/* Main Content */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center py-10 text-center">

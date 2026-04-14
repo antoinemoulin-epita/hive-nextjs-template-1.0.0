@@ -43,11 +43,11 @@ export const AboutIntro = () => {
     <section id="studio" className="section-padding">
       <div className="container space-y-20">
         {/* Hero block — dark, impactful */}
-        <div className="relative overflow-hidden rounded-2xl bg-[#0B1A24] px-8 py-16 text-white md:px-16 md:py-24">
+        <div className="relative overflow-hidden rounded-2xl bg-[#141952] px-8 py-16 text-white md:px-16 md:py-24">
           {/* Subtle gradient */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -top-[30%] -right-[10%] h-[60%] w-[50%] rounded-full bg-[#255F7F] opacity-20 blur-[120px]" />
-            <div className="absolute -bottom-[20%] -left-[10%] h-[50%] w-[40%] rounded-full bg-[#2C769D] opacity-15 blur-[100px]" />
+            <div className="absolute -top-[30%] -right-[10%] h-[60%] w-[50%] rounded-full bg-[#202DDB] opacity-20 blur-[120px]" />
+            <div className="absolute -bottom-[20%] -left-[10%] h-[50%] w-[40%] rounded-full bg-[#2F41FC] opacity-15 blur-[100px]" />
           </div>
 
           <div className="relative z-10 grid items-center gap-12 md:grid-cols-2">
@@ -57,7 +57,7 @@ export const AboutIntro = () => {
                 <br />
                 Zéro intermédiaire.
               </h2>
-              <p className="max-w-md text-lg leading-relaxed text-[#98C9E1]/70">
+              <p className="max-w-md text-lg leading-relaxed text-[#99B9FF]/70">
                 Studio Cran, c&apos;est deux étudiants d&apos;EPITA convaincus
                 que les PME méritent des outils aussi bons que ceux des startups
                 tech.
@@ -84,7 +84,7 @@ export const AboutIntro = () => {
                     <p className="font-display text-lg font-semibold">
                       {founder.name}
                     </p>
-                    <p className="text-sm text-[#6CB2D2]">{founder.role}</p>
+                    <p className="text-sm text-[#7092FF]">{founder.role}</p>
                   </div>
                 </div>
               ))}
@@ -100,10 +100,10 @@ export const AboutIntro = () => {
               { value: '12+', label: 'Technos maîtrisées' },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="font-display text-3xl font-semibold text-[#ADE8F4]">
+                <p className="font-display text-3xl font-semibold text-[#BFD5FF]">
                   {stat.value}
                 </p>
-                <p className="mt-1 text-sm text-[#98C9E1]/50">{stat.label}</p>
+                <p className="mt-1 text-sm text-[#99B9FF]/50">{stat.label}</p>
               </div>
             ))}
           </div>

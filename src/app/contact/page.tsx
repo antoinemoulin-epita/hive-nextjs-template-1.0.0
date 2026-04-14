@@ -34,24 +34,24 @@ export default function ContactPage() {
         theme: 'light',
         cssVarsPerTheme: {
           light: {
-            'cal-brand': '#2C769D',
-            'cal-brand-emphasis': '#214459',
-            'cal-border-emphasis': '#C8E1EF',
-            'cal-text': '#162C3B',
-            'cal-text-emphasis': '#162C3B',
-            'cal-border-default': '#C8E1EF',
-            'cal-border-subtle': '#E6F1F8',
-            'cal-bg-emphasis': '#F3F8FC',
+            'cal-brand': '#2F41FC',
+            'cal-brand-emphasis': '#222E8D',
+            'cal-border-emphasis': '#BFD5FF',
+            'cal-text': '#141952',
+            'cal-text-emphasis': '#141952',
+            'cal-border-default': '#BFD5FF',
+            'cal-border-subtle': '#DCE9FF',
+            'cal-bg-emphasis': '#ECF3FF',
           },
           dark: {
-            'cal-brand': '#3D92BA',
-            'cal-brand-emphasis': '#6CB2D2',
-            'cal-border-emphasis': '#255F7F',
-            'cal-text': '#E6F1F8',
-            'cal-text-emphasis': '#E6F1F8',
-            'cal-border-default': '#214459',
-            'cal-border-subtle': '#162C3B',
-            'cal-bg-emphasis': '#0B1A24',
+            'cal-brand': '#4F6CFF',
+            'cal-brand-emphasis': '#7092FF',
+            'cal-border-emphasis': '#202DDB',
+            'cal-text': '#DCE9FF',
+            'cal-text-emphasis': '#DCE9FF',
+            'cal-border-default': '#222E8D',
+            'cal-border-subtle': '#141952',
+            'cal-bg-emphasis': '#141952',
           },
         },
         hideEventTypeDetails: false,
@@ -90,14 +90,14 @@ export default function ContactPage() {
         </div>
 
         {/* Mode selector */}
-        <div className="mx-auto flex max-w-md overflow-hidden rounded-xl border border-[#C8E1EF] bg-[#F3F8FC] p-1.5">
+        <div className="mx-auto flex max-w-md overflow-hidden rounded-xl border border-[#BFD5FF] bg-[#ECF3FF] p-1.5">
           <button
             onClick={() => setMode('call')}
             className={cn(
               'flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all',
               mode === 'call'
-                ? 'bg-white text-[#162C3B] shadow-sm'
-                : 'text-[#22506A] hover:text-[#162C3B]',
+                ? 'bg-white text-[#141952] shadow-sm'
+                : 'text-[#202CB3] hover:text-[#141952]',
             )}
           >
             <Calendar className="h-4 w-4" />
@@ -108,8 +108,8 @@ export default function ContactPage() {
             className={cn(
               'flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all',
               mode === 'message'
-                ? 'bg-white text-[#162C3B] shadow-sm'
-                : 'text-[#22506A] hover:text-[#162C3B]',
+                ? 'bg-white text-[#141952] shadow-sm'
+                : 'text-[#202CB3] hover:text-[#141952]',
             )}
           >
             <MessageSquare className="h-4 w-4" />
@@ -122,7 +122,7 @@ export default function ContactPage() {
           {mode === 'call' ? (
             <div className="space-y-6">
               {/* Cal.com inline embed */}
-              <div className="overflow-hidden rounded-2xl border border-[#C8E1EF]">
+              <div className="overflow-hidden rounded-2xl border border-[#BFD5FF]">
                 <Cal
                   calLink="antoine-mln-ojoghx/30min"
                   style={{ width: '100%', height: '100%', overflow: 'scroll' }}
@@ -166,8 +166,8 @@ export default function ContactPage() {
               {/* Right: form */}
               <div className="md:col-span-3">
                 {status === 'success' ? (
-                  <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#C8E1EF] bg-[#F3F8FC] p-10 text-center">
-                    <CheckCircle className="h-12 w-12 text-[#2C769D]" />
+                  <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#BFD5FF] bg-[#ECF3FF] p-10 text-center">
+                    <CheckCircle className="h-12 w-12 text-[#2F41FC]" />
                     <h2 className="font-display text-2xl font-semibold">
                       Message envoyé
                     </h2>
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 ) : (
                   <form
                     onSubmit={handleSubmit}
-                    className="space-y-5 rounded-2xl border border-[#C8E1EF] bg-[#F3F8FC] p-8"
+                    className="space-y-5 rounded-2xl border border-[#BFD5FF] bg-[#ECF3FF] p-8"
                   >
                     <div className="grid gap-5 sm:grid-cols-2">
                       <div className="space-y-2">
