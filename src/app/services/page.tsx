@@ -28,7 +28,7 @@ const services = [
     description:
       "Un outil pensé pour votre métier, pas un logiciel générique. Interface intuitive, connecté à ce que vous utilisez déjà. On part de votre process, on construit l'outil qui le remplace.",
     tags: ['Application web', 'Dashboard', 'Outil interne', 'Intégration API'],
-    image: '/dashboard/01.jpg',
+    image: '/dashboard/software.png',
     example: {
       label: 'Exemple concret',
       text: 'Top Loisirs — site refait et logiciel interne qui remplace Excel, emails et classeurs papier.',
@@ -46,7 +46,7 @@ const services = [
       'Traitement de données',
       'Workflows',
     ],
-    image: '/dashboard/02.jpg',
+    image: '/dashboard/ai-automation.jpg',
     example: {
       label: 'Exemple concret',
       text: 'Relances prospects automatiques, génération de rapports, extraction de données — gardés sous supervision humaine.',
@@ -132,12 +132,12 @@ export default function ServicesPage() {
               className="group"
             >
               <Card className="border-none bg-transparent">
-                <div className="relative h-[335px] w-full overflow-hidden lg:h-[450px]">
+                <div className="relative h-[335px] w-full overflow-hidden rounded-lg bg-white lg:h-[450px]">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover transition-all duration-500 ease-out group-hover:scale-110"
+                    className="object-contain transition-all duration-500 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/3" />

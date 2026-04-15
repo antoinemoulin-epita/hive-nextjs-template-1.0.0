@@ -20,14 +20,14 @@ const services = [
     description:
       "Un outil pensé pour votre métier, pas un logiciel générique. Interface intuitive, connecté à ce que vous utilisez déjà. On part de votre process, on construit l'outil qui le remplace.",
     tags: ['Application web', 'Dashboard', 'Outil interne', 'Intégration API'],
-    image: { src: '/dashboard/01.jpg', alt: 'Interface logiciel sur mesure' },
+    image: { src: '/dashboard/software.png', alt: 'Interface logiciel sur mesure' },
   },
   {
     title: 'Automatisation IA',
     description:
       "On automatise ce que vous faites à la main. Relances clients, traitement de données, rédaction — moins d'erreurs, plus de temps pour votre vrai métier.",
     tags: ['IA générative', 'Relances auto', 'Traitement de données', 'Chatbot'],
-    image: { src: '/dashboard/02.jpg', alt: 'Interface automatisation IA' },
+    image: { src: '/dashboard/ai-automation.jpg', alt: 'Interface automatisation IA' },
   },
   {
     title: 'Évolution & support',
@@ -104,12 +104,12 @@ export const Services = () => {
                   </div>
 
                   {/* Image */}
-                  <div className="relative aspect-square h-[335px] flex-1 overflow-hidden md:h-[500px] 2xl:h-[608px]">
+                  <div className="relative aspect-[4/3] h-[335px] flex-1 overflow-hidden rounded-lg bg-white md:h-[500px] 2xl:h-[608px]">
                     <Image
                       src={service.image.src}
                       alt={service.image.alt}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       sizes="(max-width: 1024px) 100vw, 608px"
                       priority={index === 0}
                     />
