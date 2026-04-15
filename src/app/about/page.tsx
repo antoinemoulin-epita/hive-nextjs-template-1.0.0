@@ -24,7 +24,7 @@ const founders = [
       alt: 'Antoine Moulin',
       className: '',
     },
-    linkedin: 'https://linkedin.com/in/antoinemoulin',
+    linkedin: 'https://www.linkedin.com/in/antoine-moulin04/',
   },
   {
     name: 'David Mvoula',
@@ -35,7 +35,7 @@ const founders = [
       alt: 'David Mvoula',
       className: '',
     },
-    linkedin: 'https://linkedin.com/in/davidmvoula',
+    linkedin: 'https://www.linkedin.com/in/david-mvoula/',
   },
 ];
 
