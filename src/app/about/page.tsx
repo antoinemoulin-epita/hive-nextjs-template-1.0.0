@@ -69,18 +69,6 @@ export default function AboutPage() {
           </h1>
         </div>
 
-        <div className="bigger-container">
-          <div className="relative h-[335px] w-full overflow-hidden md:h-[450px] lg:h-[600px]">
-            <Image
-              src="/images/about/hero.webp"
-              alt="Studio Cran"
-              fill
-              className="object-cover object-top"
-              sizes="100vw"
-              priority
-            />
-          </div>
-        </div>
       </section>
 
       {/* Notre histoire */}
@@ -120,13 +108,13 @@ export default function AboutPage() {
         <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
           {founders.map((founder) => (
             <Reveal key={founder.name} as="div" className="group flex flex-col gap-5">
-              <div className="relative h-[335px] w-full overflow-hidden sm:h-[392px] lg:h-[425px]">
+              <div className="relative aspect-square w-full overflow-hidden">
                 <Image
                   src={founder.image.src}
                   alt={founder.image.alt}
                   fill
                   className={cn(
-                    'object-cover grayscale transition-all duration-500 group-hover:grayscale-0',
+                    'object-contain grayscale transition-all duration-500 group-hover:grayscale-0',
                     founder.image.className,
                   )}
                   sizes="(max-width: 768px) 100vw, 50vw"

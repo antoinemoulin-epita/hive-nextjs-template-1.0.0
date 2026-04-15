@@ -3,16 +3,16 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     quote:
-      "On avait la vision produit et le marché, mais pas l'équipe tech. Studio Cran a livré un SaaS complet en quelques semaines — chaque module est pensé pour qu'un restaurateur débordé s'en serve sans formation. On peut enfin montrer un vrai produit à nos premiers clients et à nos investisseurs.",
+      "On avait le concept et les premiers clients, mais zéro compétence technique en interne. Studio Cran a compris le produit en deux appels et a livré une plateforme complète que nos restaurateurs utilisent au quotidien. C'est la première fois qu'un prestataire livre ce qu'il promet, dans les délais annoncés.",
     name: 'Fondateur HollyFork',
     role: 'Startup SaaS restauration',
     initials: 'HF',
   },
   {
     quote:
-      "Trente ans qu'on tourne avec Excel, des emails et des classeurs papier. Studio Cran nous a refait le site et construit l'outil interne en parallèle, sans jargon, en comprenant vraiment notre métier. Nos week-ends chargés sont enfin devenus gérables.",
+      "Ça fait trente ans qu'on gère tout avec Excel et des pochettes papier. On a essayé deux logiciels avant, c'était trop compliqué ou pas adapté. Studio Cran a pris le temps de comprendre comment on travaille — vraiment — et a construit un outil que même mon chef d'atelier utilise sans râler.",
     name: 'Fondateur Top Loisirs',
-    role: 'PME loisirs outdoor, 30 ans d’expérience',
+    role: 'PME loisirs outdoor, 30 ans d\u2019expérience',
     initials: 'TL',
   },
 ];
@@ -37,13 +37,15 @@ export const Testimonials = () => {
               key={t.name}
               className="border-border bg-card relative flex flex-col gap-6 rounded-lg border p-8"
             >
-              <Quote
-                className="text-primary/20 absolute top-6 right-6 h-10 w-10"
-                aria-hidden
-              />
-              <blockquote className="text-foreground relative text-lg leading-relaxed">
-                « {t.quote} »
-              </blockquote>
+              <div className="flex items-start justify-between gap-4">
+                <blockquote className="text-foreground text-lg leading-relaxed">
+                  « {t.quote} »
+                </blockquote>
+                <Quote
+                  className="text-primary/20 h-10 w-10 shrink-0"
+                  aria-hidden
+                />
+              </div>
               <figcaption className="mt-auto flex items-center gap-4 border-t border-border pt-6">
                 <div className="bg-primary/10 text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-sm font-semibold">
                   {t.initials}

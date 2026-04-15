@@ -14,10 +14,10 @@ import {
 import { cn } from '@/lib/utils';
 
 const heroImages = [
-  { src: '/hollyfork/dashboard.png', alt: 'Dashboard de gestion HollyFork' },
-  { src: '/hollyfork/planning.png', alt: 'Planning de réservations' },
-  { src: '/hollyfork/reservation.png', alt: 'Interface de réservation' },
-  { src: '/hollyfork/carte.png', alt: 'Gestion de la carte' },
+  { src: '/dashboard/dbfb3c7a96cf9e9a046cf9e5b5c3c1ee.jpg', alt: 'Dashboard de gestion' },
+  { src: '/dashboard/dashboard09.jpg', alt: 'Interface de gestion' },
+  { src: '/dashboard/dashboard02.jpg', alt: 'Interface de gestion' },
+  { src: '/dashboard/04.jpg', alt: 'Suivi et évolution continue' },
 ];
 
 function HeroCard({
@@ -28,7 +28,7 @@ function HeroCard({
   className?: string;
 }) {
   return (
-    <div className={cn('group relative h-full w-full overflow-hidden', className)}>
+    <div className={cn('group relative h-full w-full overflow-hidden rounded-xl', className)}>
       <Image
         src={image.src}
         alt={image.alt}

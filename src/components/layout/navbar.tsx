@@ -128,7 +128,7 @@ export const Navbar = ({
               </div>
             </button>
           </div>
-          <div onClick={() => setIsMenuOpen(false)}>
+          <div className="absolute left-1/2 -translate-x-1/2" onClick={() => setIsMenuOpen(false)}>
             <Logo />
           </div>
 
